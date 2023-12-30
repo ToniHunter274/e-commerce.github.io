@@ -1,0 +1,585 @@
+body{
+	font-family: 'Kumbh sans', sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li{
+	float: left;
+}
+
+li a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	padding: 5px 10px;
+	color: #000;
+}
+
+header{
+	display: flex; 
+	justify-content: space-between; 
+	padding: 25px; 
+}
+
+main{
+	display: flex;
+}
+
+.small-images-container{
+	display: flex; 
+	padding: 15px; 
+	width: 60%;
+}
+
+.left-side{
+	width: 60%; 
+	margin-inline-end:50px; 
+	padding-block-start:100px;
+}
+
+.edition{
+	font-size: 30px; 
+	font-weight: 700; 
+	letter-spacing: 2px;
+}
+
+.discount-price{
+	margin-block-end:10px; 
+	margin-block-start:25px;
+}
+
+.percent{
+	padding: 6px; 
+	letter-spacing: 2px; 
+	font-size: 10px; 
+	border-radius: 5px; 
+	margin-inline-start:10px; 
+	font-weight: 700; 
+	background-color: hsl(25, 100%, 94%); 
+	color:hsl(26, 100%, 55%);
+}
+
+.quantity-tracker{ 
+	border-radius: 10px; 
+	background-color: hsl(223, 64%, 98%);
+}
+
+#line-divider{
+	width: 100%;
+	height: 1%;
+	border-bottom: 1px solid hsl(220, 14%, 75%);
+	position: relative;
+	top: -30px;
+}
+
+.small-image {
+    position: relative;  /* Required for the absolute positioning of the pseudo-element */
+}
+
+
+.small-image-edits{
+    border-radius: 15px;
+    width: 75%;
+    transition: opacity 0.3s;  /* Only transition opacity here */
+}
+
+.small-image-edits:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+.displayed-image{
+	width: 60%;
+	border-radius: 15px;
+}
+
+.displayed-image:hover{
+	cursor: pointer;
+}
+
+#color-title{
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: hsl(26, 100%, 55%);
+}                             
+
+.cart-container{
+	width: 30%;
+	background-color: hsl(26, 100%, 55%);
+	color: #fff;
+	border-radius: 10px;
+	font-family: 'Kumbh sans', sans-serif;
+	margin-inline-start:25px;
+	border: none;
+}
+
+.cart-container:hover{
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.btn-gaps{
+	padding: 15px;
+	font-size: 20px;
+	color: hsl(26, 100%, 55%);
+	border: none;
+	background:none;
+}
+
+.btn-gaps:hover{
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+.added-items {
+    display: none;
+    position: absolute;
+    top: 70px; /* adjust this according to the height of your nav bar */
+    right: 20px; /* adjust this to align the dropdown to the right */
+    width: 20%; /* set a fixed width for the cart dropdown */
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Optional: for a shadow effect */
+    z-index: 1; /* ensure the dropdown appears above other content */
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+#counter{
+	display: none;
+	user-select: none;
+	position: absolute;
+	background: hsl(26, 100%, 55%);
+	width: 1.3rem;
+	height: 1.3rem;
+	font-size: .8rem;
+	border-radius:50%;
+	align-items: center;
+	justify-content: center;
+	top: -5px;
+	left: 15px;
+	color: #fff;
+	font-weight: 700;
+
+}
+
+#cart-icon-container{
+	position: relative;
+}
+
+#cart-icon-container:hover{
+	cursor: pointer;
+}
+
+#prev-price{
+	display: block;
+	margin-block-start:10px;
+	text-decoration: line-through;
+	font-weight: 700;
+	color: hsl(220, 14%, 75%);
+
+}
+
+.quantity-tracker-container{
+	display: flex;
+	margin-block-start:30px;
+}
+
+#paragraph-one{
+	font-size: 15px; 
+	font-weight: 400; 
+	color: hsl(220, 14%, 75%);
+}
+
+#black-friday{ 
+	font-size: 20px; 
+	font-weight: 500; 
+	letter-spacing: 2px;
+	font-weight: 700;
+}
+
+.for-delete{
+	position: relative;
+	top: 20px;
+}
+
+.check{
+	width: 85%;
+	margin-inline-start:25px;
+	padding: 15px;
+	border-radius: 5px;
+	background-color: hsl(26, 100%, 55%);
+	border: none;
+	font-family: 'Kumbh sans', sans-serif;
+	color:#fff;
+	font-weight: 700;
+
+}
+
+.d-avatar{
+	width:100%; 
+	height:40%;
+}
+.d-avatar:hover{
+	border: 2px solid hsl(26, 100%, 55%);
+	border-radius: 30px;
+	cursor: pointer; 
+}
+
+.avatar-container{
+	margin-top: -10px;
+}
+
+#input-amount{
+	margin-inline-start:35px;
+	margin-inline-end:35px;
+	font-weight: 700;
+}
+
+#input-amount:hover{
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+.nav-style{
+	padding-bottom: 56px;
+}
+
+#empty-message{
+	display: none;
+	text-align: center;
+}
+
+.nav-style:hover{
+	border-bottom: 3px solid hsl(26, 100%, 55%);
+	transition: border-bottom 0.3s; 
+}
+
+.hidden-image-display{
+	display: none;
+	background:rgba(0,0,0,0.45);
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding-inline-start:450px;
+
+}
+
+.container{
+	padding-inline-start:150px;
+	padding-inline-end:150px;
+}
+
+
+
+#next{
+	height: 7%;
+	padding: 15px;
+	border-radius: 200px;
+	background-color: #fff;
+	position: relative;
+	left: -410px;
+	top: 250px;
+}
+
+#previous{
+	height: 7%;
+	padding: 15px;
+	border-radius: 200px;
+	background-color: #fff;
+	position: relative;
+	top: 250px;
+	left: 10px;
+
+}
+
+.mini-image{
+	margin-inline-end:25px; 
+	border-radius: 15px; 
+}
+
+.mini-image:hover{
+	border: 2px solid hsl(26, 100%, 55%);
+}
+
+.navbar-right{
+	display: flex; 
+	justify-content: space-between;
+}
+
+.close-icon{
+	position: relative;
+	left: 650px;  
+	top: 20px; 
+	width: 2%;
+}
+
+.image-slider{
+	display: flex;
+	margin-block-start:50px;
+	margin-inline-start:30px;
+}
+
+.thumbnail-container{
+	display: flex;
+	margin-block-start:20px;
+}
+
+.image-edit{
+	border-radius: 15px;
+	opacity: 0.5s
+}
+
+.image-edit:hover{
+	opacity: 0.5s;
+	transition: opacity 0.3s;
+}
+
+
+
+.active-img{
+	width: 60%;
+}
+
+.active-thumbnail {
+    border: 2px solid orange;
+    opacity: 0.7;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.nav-responsive {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px; /* You can adjust this value based on your design */
+    height: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    transition: left 0.3s;
+}
+
+ul.open {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px; 
+    height: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    transition: left 0.3s;
+    padding-top:50px; 
+}
+
+ul.open.open {
+    left: 0;
+}
+
+ul.open li {
+    float: none;
+    display: block;
+    width: 100%;
+}
+
+
+.nav-responsive ul {
+    display: block;
+}
+
+.nav-responsive li {
+    float: none;
+    text-align: left;
+}
+
+.nav-responsive.open {
+    left: 0;
+}
+
+#mobile-logo{
+	display: none;
+}
+
+.close-nav{
+	display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);  /* Adjust the 0.4 to make it lighter or darker */
+    display: none;
+    z-index: 999;
+}
+
+.mobile-prev, .mobile-next {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+        font-weight: 700;
+    }
+
+    #mobile-logo{
+    	display: block;
+    }
+
+    .mobile-display{
+    	display: flex;
+    	justify-content: space-between;
+    }
+
+    .nav-style{
+    	font-weight: 700;
+    	padding-bottom: 0px;
+    }
+    
+    ul {
+        display: none;
+    }
+    
+    .navbar-right {
+        display: flex;
+        align-items: center;
+    }
+
+    #desktop-logo{
+    	display: none;
+    }
+
+    .navbar-right img {
+        margin: 0 10px;
+    }
+
+    .close-nav{
+    	display: block;
+    }
+
+    .d-avatar{
+    	width: 25%;
+    }
+
+    .container{
+    	padding-inline-start:0px;
+    	padding-inline-end:0px;
+    }
+
+    nav{
+    	width: 60%;
+    }
+
+    .navbar-right{
+    	position: absolute;
+    	right: 0;
+    }
+
+    aside{
+    	flex-direction: column;
+    }
+
+    main{
+    	flex-direction: column;
+    }
+
+    .displayed-image{
+    	width: 100%;
+    	border-radius: 0px;
+    }
+
+    #line-divider{
+    	display: none;
+    }
+
+    /*.mobile-prev{
+    	display: inline-block;
+    	padding: 15px;
+    	border-radius: 100px;
+    	background-color: #fff;
+    	height: 10%;
+    	position: relative;
+    	top: 400px;
+    }
+
+    .mobile-next{
+    	display: inline-block;
+    	padding: 15px;
+    	border-radius: 100px;
+    	background-color: #fff;
+    	height: 10%;
+    	float: right;
+    	position: relative;
+    	top: -420px;
+    }*/
+
+    .image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.displayed-image {
+    display: block;
+    max-width: 100%; /* Makes the image responsive */
+    height: auto;
+}
+
+.mobile-prev,
+.mobile-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* This will vertically center the SVGs */
+    cursor: pointer; /* Changes the mouse cursor when hovering over the SVGs */
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50px;
+    display: block;
+}
+
+.mobile-prev {
+    left: 10px; /* You can adjust this value to position the left arrow as you desire */
+}
+
+.mobile-next {
+    right: 10px; /* Adjust this value to position the right arrow as you desire */
+}
+
+
+
+  
+}
+
+@media only screen and (min-width: 769px) {
+    ul {
+        display: block !important;
+    }
+}

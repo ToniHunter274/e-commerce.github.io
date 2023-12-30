@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="images/favicon-32x32.png">
+	<title>E-COMMERCE LANDING PAGE</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;500;700&family=Fraunces:wght@700&family=Inter:wght@300;500;600&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Montserrat:wght@300;500;700&family=Open+Sans:wght@300;400&family=Plus+Jakarta+Sans:ital,wght@0,600;0,700;1,200&family=Poppins:wght@100;200;500;600;700&family=Prompt:wght@400;500;700&family=Questrial&family=Roboto+Condensed:wght@300;400;700&family=Rubik:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;700&family=Varela+Round&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="hidden-image-display">
+    	<div class="close-icon">
+        	<!-- SVG for the close icon remains unchanged -->
+        	<svg width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="hsl(26, 100%, 55%)" fill-rule="evenodd"/></svg>
+    	</div>
+    	<div class="image-slider">
+        	<div id="previous" class="arrow">
+            	<!-- SVG for the previous arrow remains unchanged -->
+           	 <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke="hsl(26, 100%, 55%)" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+        	</div>
+        	<div class="image-display">
+            	<img src="images/image-product-1.jpg" class="active-img">
+        	</div>
+        	<div id="next" class="arrow">
+            	<!-- SVG for the next arrow remains unchanged -->
+            	<svg width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke="hsl(26, 100%, 55%)" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+        	</div>
+    	</div>
+    	<div class="thumbnail-container">
+        	<div class="mini-image" data-img-src="images/image-product-1.jpg">
+            	<img src="images/image-product-1-thumbnail.jpg" class="image-edit">
+        	</div>
+        	<!-- Other .oplil elements remain unchanged -->
+        	<div class="mini-image" data-img-src="images/image-product-2.jpg">
+				<img src="images/image-product-2-thumbnail.jpg" class="image-edit">
+			</div>
+			<div class="mini-image" data-img-src="images/image-product-3.jpg">
+				<img src="images/image-product-3-thumbnail.jpg" class="image-edit">
+			</div>
+			<div class="mini-image" data-img-src="images/image-product-4.jpg">
+				<img src="images/image-product-4-thumbnail.jpg" class="image-edit">
+			</div>
+    	</div>
+	</div>
+	
+
+
+	<div class="container">
+	<header>
+
+    		<nav>
+    				<div class="mobile-display">
+    					<div>
+    						<button class="nav-toggle" id="navToggle">☰</button>
+						</div>
+						<div>
+							<img src="images/logo.svg" alt="Sneaker Logo" id="mobile-logo">
+						</div>
+    					    
+    				</div>	
+    			
+    			<div class="overlay" id="overlay"></div>
+        		<ul>
+        			<div class="close-nav">
+        	<!-- SVG for the close icon remains unchanged -->
+        			<svg width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fill-rule="evenodd"/></svg>
+    				</div>
+    	
+            		<li><img src="images/logo.svg" alt="Sneaker Logo" id="desktop-logo"></li>
+                	<li class="nav-style"><a href="#">Collections</a></li>
+               		<li class="nav-style"><a href="#">Men</a></li>
+					<li class="nav-style"><a href="#">Women</a></li>
+					<li class="nav-style"><a href="#">About</a></li>
+					<li class="nav-style"><a href="#">Contact</a></li>           				
+        		</ul>
+    		</nav>
+
+    		<div class="navbar-right">
+        		<div id="cart-icon-container">
+					<span id="counter">1</span>
+					<img src="images/icon-cart.svg">
+				</div>
+				<div class="avatar-container">
+					<img src="images/image-avatar.png" class="d-avatar">
+				</div>
+	
+    		</div>
+	</header>
+
+	<div id="line-divider"></div>
+	<div class="added-items">
+		<h4>Cart</h4>
+		<hr>
+		<ul id="cart-list">
+			<p id="empty-message">Your cart is empty</p>
+		</ul>
+	 </div> 
+
+
+	<main>
+		<aside>
+			<div class="image-wrapper">
+				<span class="mobile-prev">
+					<svg width="12" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke="hsl(26, 100%, 55%)" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+				</span>
+				<img src="images/image-product-1.jpg" class="displayed-image">
+				<span class="mobile-next">
+					<svg width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke="hsl(26, 100%, 55%)" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+				</span>
+			</div>
+			<div class="small-images-container">
+				<div class="small-image">
+					<img src="images/image-product-1-thumbnail.jpg" class="small-image-edits">
+				</div>
+				<div class="small-image">
+					<img src="images/image-product-2-thumbnail.jpg" class="small-image-edits">
+				</div>
+				<div class="small-image">
+					<img src="images/image-product-3-thumbnail.jpg" class="small-image-edits">
+				</div>
+				<div class="small-image">
+					<img src="images/image-product-4-thumbnail.jpg" class="small-image-edits">
+				</div>
+			</div>
+		</aside>
+
+		<aside class="left-side">
+			<p id="color-title">SNEAKER COMPANY</p>
+			<span class="edition">Fall Limited Edition <br> Sneakers</span>
+			<p id="paragraph-one">These low profile sneakers are your perfect casual wears <br> companion. Featuring a durable rubber outer sole, they'll<br> withstand everything the weather can offer.</p>
+			<div>
+				<div class="discount-price">
+					<span id="black-friday">$125.00</span>
+					<span class="percent">50%</span>
+				</div>
+				<span id="prev-price">$250.00</span>
+			</div>
+			<div class="quantity-tracker-container">
+				<div class="quantity-tracker">
+					<button class="btn-gaps">-</button><span id="input-amount">0</span><button class="btn-gaps">+</button>
+				</div>
+				<button class="cart-container">
+					<svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#fff" fill-rule="nonzero"/></svg>
+					&nbsp;&nbsp;&nbsp;
+					<span>Add to Cart</span>
+				</button>
+			</div>
+		</aside>
+	</main>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
